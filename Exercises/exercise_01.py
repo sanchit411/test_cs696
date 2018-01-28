@@ -67,5 +67,3 @@ def complement(dna):
             print("Invalid Character")
     return comp
 
-print(percent_decimal(7))
-print(complement("AAATGCA"))
