@@ -73,4 +73,3 @@ def fasta_folder_to_dict(folder_path):
             result[header] = dict[header]               
     return result
 
-print(fasta_folder_to_dict('test_files'))
