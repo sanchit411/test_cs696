@@ -64,12 +64,10 @@ def fasta_folder_to_dict(folder_path):
                                 print ("a duplicate entry exists for "+header)
                             else:
                                 print("non identical entry for "+header)
+                                del dict[header]
                         else:
                             dict[header] = sequence        
                     except:
-                        print('Error:No entry')
-    for header, sequence in dict.items():
-        if "good" in header:
-            result[header] = dict[header]               
-    return result
+                        print('Error:No entry')               
+    return dict
 
