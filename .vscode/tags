@@ -1,0 +1,39 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+complement	../Exercises/exercise_01.py	/^def complement(dna):$/;"	kind:function	line:50
+count_letters	../Exercises/exercise_02.py	/^def count_letters(s):$/;"	kind:function	line:40
+csv_list	../Homework/homework_1.py	/^def csv_list(file_name):$/;"	kind:function	line:81
+exercise_01.py	../Exercises/exercise_01.py	1;"	kind:file	line:1
+exercise_02.py	../Exercises/exercise_02.py	1;"	kind:file	line:1
+exercise_03.py	../Exercises/exercise_03.py	1;"	kind:file	line:1
+exponent	../Exercises/exercise_01.py	/^def exponent(integer, power):$/;"	kind:function	line:38
+fast_complement	../Homework/homework_1.py	/^def fast_complement(dna):$/;"	kind:function	line:9
+fasta_dict	../Homework/homework_1.py	/^def fasta_dict(file_name):$/;"	kind:function	line:114
+fasta_folder_to_dict	../Exercises/exercise_03.py	/^def fasta_folder_to_dict(folder_path):$/;"	kind:function	line:40
+fasta_headers	../Homework/homework_1.py	/^def fasta_headers(file_name):$/;"	kind:function	line:106
+fasta_seqs	../Homework/homework_1.py	/^def fasta_seqs(file_name):$/;"	kind:function	line:98
+fastq_to_fasta	../Homework/homework_1.py	/^def fastq_to_fasta(file_name, new_name=None):$/;"	kind:function	line:123
+first_element	../Exercises/exercise_02.py	/^def first_element(my_list, n):$/;"	kind:function	line:17
+first_elements	../Exercises/exercise_02.py	/^def first_elements(my_list, n):$/;"	kind:function	line:7
+get_csv_column	../Homework/homework_1.py	/^def get_csv_column(file_name, column):$/;"	kind:function	line:89
+head	../Homework/homework_1.py	/^def head(file_name):$/;"	kind:function	line:57
+hello	../Exercises/exercise_01.py	/^def hello():$/;"	kind:function	line:15
+homework_1.py	../Homework/homework_1.py	1;"	kind:file	line:1
+kmer_dict	../Homework/homework_1.py	/^def kmer_dict(s, k):$/;"	kind:function	line:46
+kmer_list	../Homework/homework_1.py	/^def kmer_list(s, k):$/;"	kind:function	line:28
+kmer_set	../Homework/homework_1.py	/^def kmer_set(s, k):$/;"	kind:function	line:37
+n_elements	../Exercises/exercise_02.py	/^def n_elements(my_list, start, n):$/;"	kind:function	line:28
+os	../Exercises/exercise_03.py	/^import os$/;"	kind:namespace	line:38
+percent_decimal	../Exercises/exercise_01.py	/^def percent_decimal(i):$/;"	kind:function	line:23
+print_even	../Homework/homework_1.py	/^def print_even(file_name):$/;"	kind:function	line:73
+protein_wight	../Exercises/exercise_02.py	/^def protein_wight(protein):$/;"	kind:function	line:55
+reading_frames	../Homework/homework_1.py	/^def reading_frames(dna):$/;"	kind:function	line:176
+remove_interval	../Homework/homework_1.py	/^def remove_interval(s, start, stop):$/;"	kind:function	line:17
+reverse_complement	../Homework/homework_1.py	/^def reverse_complement(dna):$/;"	kind:function	line:135
+tail	../Homework/homework_1.py	/^def tail(file_name):$/;"	kind:function	line:65
+transcribe	../Homework/homework_1.py	/^def transcribe(dna):$/;"	kind:function	line:143
+translate	../Homework/homework_1.py	/^def translate(rna):$/;"	kind:function	line:151
