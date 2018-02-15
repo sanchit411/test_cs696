@@ -52,6 +52,7 @@ def fasta_folder_to_dict(folder_path):
             with open(folder_path+'/'+file,'r') as infile:
                 text = infile.read()
                 seqs = text.split('>')
+                seqs.remove('')
                 for seq in seqs:
                     try:
                         x = seq.split('\n', 1)
