@@ -308,6 +308,7 @@ def get_filesize(string):
     :param string: the xml metadata document in string format from get_sra_xml()
     :return: a float
     """
+    string = get_sra_xml('SRR3403834')
     pattern = re.compile(r'size.*?([0-9.-]+)')
     size = re.search(pattern,string)
 
