@@ -39,7 +39,9 @@ def time_decorator(my_def):
         t0 = time.time()
         def_result = my_def()
         t1 = time.time()
+
         print("'{}' finished in {} seconds".format(my_def.__name__, t1-t0))
+        print("'{}' process time in {} seconds".format(my_def.__name__, time.process_time()))
         return "The size of return is {} ".format(sys.getsizeof(def_result))
     return internal_wrapper()
 
