@@ -31,7 +31,7 @@ def compute(**kwargs):
             if len(numbers) > 0:
                 add =  sum(numbers)
             else:
-                print("input doesn'tdd have integer")
+                print("input doesn't  have integer")
         except TypeError:
             print("input doesn't have integer")
         if kwargs['return_float'] == True:
@@ -46,19 +46,15 @@ def compute(**kwargs):
     else:
         return None
 
-if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='Function with integer')
-    parser.add_argument('-m', '--multiply', help='Mutilcation of two numbers',type=int)
-    parser.add_argument('-s', '--sum', help='sumation of two numbers',action='store_true')
-    parser.add_argument('remainder', help='', nargs=argparse.REMAINDER)
-
+def main():
     try:
         args = parser.parse_args()
         add = 0
         mul = 1
         if args.sum:
             for num in range(2,len(sys.argv)):
-                add = add + int(sys.argv[num])   
+                add = add + int(sys.argv[num]) 
+            print(add)   
         elif args.multiply:
             for i in range(3,len(sys.argv)):
                 print(int(sys.argv[2])*int(sys.argv[i]))
@@ -67,3 +63,11 @@ if __name__ == '__main__':
     except:
         parser.print_help()
         sys.exit(1)
+
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser(description='Function with integer')
+    parser.add_argument('-m', '--multiply', help='Mutilcation of two numbers',type=int)
+    parser.add_argument('-s', '--sum', help='sumation of two numbers',action='store_true')
+    parser.add_argument('remainder', help='', nargs=argparse.REMAINDER)
+    main()
+
