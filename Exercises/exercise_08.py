@@ -25,6 +25,7 @@ import sys
 import argparse
 
 def compute(**kwargs):
+    float_true = kwargs.get('return_float',False)
     if 'input' in kwargs:
         try:
             numbers = [num for num in kwargs['input'] if isinstance(num,int)]
@@ -34,23 +35,21 @@ def compute(**kwargs):
                 print("input doesn't  have integer")
         except TypeError:
             print("input doesn't have integer")
-        if kwargs['return_float'] == True:
-            result = 0.0
-        else:
-            result = 0
         if kwargs['action'] == 'sum':
             result = add
         if kwargs['action'] == 'mean':
             result =  add/len(numbers)
-        return result
     else:
         return None
+    if (float_true):
+        return float(result)
+    else:
+        return result
 
 def main():
     try:
         args = parser.parse_args()
         add = 0
-        mul = 1
         if args.sum:
             for num in range(2,len(sys.argv)):
                 add = add + int(sys.argv[num]) 
@@ -70,4 +69,6 @@ if __name__ == '__main__':
     parser.add_argument('-s', '--sum', help='sumation of two numbers',action='store_true')
     parser.add_argument('remainder', help='', nargs=argparse.REMAINDER)
     main()
+
+    #print(compute(input=[1,2,3,4],action='sum',return_float=True))
 
