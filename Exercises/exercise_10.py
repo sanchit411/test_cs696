@@ -105,41 +105,29 @@ class Gens:
 def main():
     obj = Gens(5)
 
-    print("doubles")
-    for num in obj.doubles():
-        print(num)
-        if (num) > 30:
-            break
+    # print("doubles")
+    # for num in obj.doubles():
+    #     print(num)
 
-    print("fib")
-    for num in obj.fib():
-        print(num)
-        if (num) > 20:
-            break
-    
-    print("linear")
-    for num in obj.linear(3):
-        print(num)
-        if (num) > 20:
-            break
+    # print("fib")
+    # for num in obj.fib():
+    #     print(num)
 
-    print("exponential")
-    for num in obj.exponential(3):
-        print(num)
-        if (num) > 20:
-            break
-    
-    print("sequence")
-    for num in obj.sequence([3,4,5]):
-        print(num)
-        if (num) > 10:
-            break
+    # print("linear")
+    # for num in obj.linear(3):
+    #     print(num)
 
-    print("triple_half")    
-    for num in obj.triple_half():
-       print(num)
-       if (num) > 10:
-            break
+    # print("exponential")
+    # for num in obj.exponential(3):
+    #     print(num)
+  
+    # print("sequence")
+    # for num in obj.sequence([3,4,5]):
+    #     print(num)
+
+    # print("triple_half")    
+    # for num in obj.triple_half():
+    #    print(num)
 
 if __name__ == '__main__':
     main()
